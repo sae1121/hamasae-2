@@ -12,8 +12,13 @@
   <script src="ex06-9.js"></script>
   <script src="ex06-10.js"></script>
   <script src="ex06-11.js"></script>
+  <script src="ex06-13.js"></script>
   <script src="ex07-1.js"></script>
   <script src="ex07-3.js"></script>
+  <script src="ex07-5.js"></script>
+  <script src="ex07-8.js"></script>
+  <script src="ex08-1.js"></script>
+  <script src="ex09-2.js"></script>
   
 </head>
 
@@ -69,12 +74,22 @@
   </form>
   
   <h1>タイマーイベントによる実行6-11</h1>
-  <form name="timer2">
-  <input type="button" value="スタート" onclick="hyoji2()">
+ <form name="timer2"> 
+<input type="button" value="スタート" onclick="hyoji2()">
+<br> 
+<input type="text" name="moji2" size="30" value=""> 
+</form>
   <br>
-  <input type="text" name="moji2" size="30" value="">
-  </form>
   
+  <h1>タイマーイベントによる実行の応用6-13</h1>
+  <div id="back">
+      <input type="button" value="変更後3秒でまた戻る" 
+             onclick="ChangeImageAndBack();">
+    
+  <img src='./image/josai.png' id="img13" alt="Josai Logo" class="imagechange">
+  </div>
+  <br>
+  <br>
   <h1>テキスト入力の練習</h1>
   <input type="button" value="あいさつ" onclick="sayhello71();">
   <p>誰？<input type="text" id="who71"></p>
@@ -84,6 +99,21 @@
     <input type="text" id="input1">+<input type="text" id="input2">
     <input type="button" value="計算" onclick="add();">
   </p>
+ 
+ <h1>なぞなぞ</h1>
+  <p>目を閉じていないと見られないものはなーに？</p>
+  <p>
+    答(漢字1文字で):<input type="text" id="answer">
+    <input type="button" value="解答" onclick="nazo();">
+  </p>
+  
+ <h1>なぞなぞ2</h1>
+  <input type="text" id="answer">
+  <input type="button" value="解答" onclick="nazo();">
+  
+ <h1>JavaScriptの変数とデバッガを理解09-2</h1>
+ <p>下のボタンを押すと数字が表示されます</p>
+ <p><input type="button" value="実行ボタン" onclick="addCount()"></p>
   
 </body>
 
